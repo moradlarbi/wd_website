@@ -1,0 +1,155 @@
+@import url('http://fonts.cdnfonts.com/css/one-day');
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+  
+  a {
+    color: #525252;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #EDE4BA;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'ONE DAY', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #EDE4BA;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    height: 80px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    background: rgba(145, 39, 36, 1); 
+  }
+  #header.header-transparent {
+    background: transparent;
+  }
+  #header.header-scrolled {
+    background: rgba(145, 39, 36, 1);
+    height: 60px;
+  }
+  #header .logo h1 {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  #header .logo h1 a, #header .logo h1 a:hover {
+    color: #EDE4BA;
+    text-decoration: none;
+  }
+  #header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+  }
+  /*--------------------------------------------------------------
+# Grille
+--------------------------------------------------------------*/
+  #grille {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 7% 0 0 0;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(145, 39, 36, 1); 
+    min-height: 100vh;
+
+  }
+  #grille:before {
+    content: "";
+    background: rgba(145, 39, 36, 1);  
+    position: relative;
+    z-index: -1;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #grille .red-circle {
+      position: absolute;
+      right: 0%;
+      top: 20%;
+      height: 20%;
+      animation: anime1 5s ease-in-out infinite;
+  }
+  #grille .orange-circle {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      height: 20%;
+      animation: anime1 5s ease-in-out infinite;
+  }
+  @keyframes anime1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px); 
+    }
+    100% {
+      transform: translateY(0);
+  }
+
+}
+
+  @media only screen and (max-width: 768px){
+      #grille {
+          padding-bottom: 80px;
+      }
+    #grille .red-circle {
+        top: 10%;
+        height: 10%;
+    }
+    #grille .orange-circle {
+        height: 10%;
+    } 
+
+  }
+  
+
+  #grille .desc-container p {
+    line-height: 2;
+  }
+  #grille .grille-container {
+      position: relative;
+  }
+  #grille .indices-container .indices {
+    list-style-type: none;
+  }
+  
+  #grille .indices-container .indice {
+      font-size: 1.2rem;
+  }
+  .validation-container h3 {
+      padding-left: 15px;
+  } 
+  .validation-container form input {
+      border: none;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 5px 15px;
+      outline: none;
+  }
+  .validation-container form button {
+      background-color: rgba(33, 79, 196, 0.8);
+      border: none;
+      border-radius: 10px;
+      font-family: 'ONE DAY', sans-serif;
+      color: #fff;
+      padding: 5px 7px;
+      box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+  }

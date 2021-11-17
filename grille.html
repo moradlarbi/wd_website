@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>La grille</title>
+
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+    <link href="assets/img/logo_etic.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/grille.css" rel="stylesheet">
+    <link href="assets/css/crosswordCss.CSS" rel="stylesheet">
+</head>
+<body>
+    
+  <section id="grille">
+        <img src="assets/img/red-circle.png" class="red-circle" alt="red-circle">
+        <img src="assets/img/orange-circle.png" class="orange-circle" alt="orange-circle">
+      <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-9 col-lg-5">
+                <h2>Enigme du welcome day ETICien</h2>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 col-lg-9">
+                <div class="desc-container">
+                    <h3>Chers explorateurs, </h3>
+                    <p>Bienvenue à vous sur le site officiel de l'énigme du WD ETICien.
+                          Le premier d'entre vous qui saura la compléter bénéficera d'une récompense magique. Bon courage !</p>
+                          
+                         <p>Remplissez la grille et vous verrez apparaitre le code secret dans les cases surlignées.</p> 
+                </div>
+            </div>
+          </div>
+        
+        <div class="row justify-content-between mt-5 grille-container">
+            <div class="col-12 col-lg-7"> 
+                <div class="crossword-board-container">
+  
+                    <div class="crossword-board">
+                        <script>
+                            function moveOnMax(field,nextFieldID){
+                                if(field.value.length >= field.maxLength){
+                                  document.getElementById(nextFieldID).focus();
+                                }
+                              }
+                            </script>
+
+                        <!-- ROW 1 -->
+                        <span class="crossword-board__item--blank" id="item1-1"></span>
+                        <span class="crossword-board__item--blank" id="item1-2"></span>
+                        <span class="crossword-board__item--blank" id="item1-3"></span>
+                        <span class="crossword-board__item--blank" id="item1-4"></span>
+                        <span class="crossword-board__item--blank" id="item1-5"></span>
+                        <span class="crossword-board__item--blank" id="item1-6"></span>
+                        <span class="crossword-board__item--blank" id="item1-7"></span>
+                        <input id="item1-8" class="crossword-board__item-highlighted" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item1-9')"/>
+
+                        <input id="item1-9" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item1-10')"/>
+                        <input id="item1-10" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item1-11')"/>
+                        <input id="item1-11" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item2-2')"/>
+                        <span class="crossword-board__item--blank" id="item1-12"></span>
+                        <span class="crossword-board__item--blank" id="item1-13"></span>
+                        <span class="crossword-board__item--blank" id="item1-14"></span>
+                        <span class="crossword-board__item--blank" id="item1-15"></span>
+                        <!-- ROW 1 -->
+                
+                        <!-- ROW 2 -->
+                        <span class="crossword-board__item--blank" id="item2-1"></span>
+                        <input id="item2-2" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item2-3')"/>
+                        <input id="item2-3" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item2-4')"/>
+                        <input id="item2-4" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item2-5')"/>
+                        <input id="item2-5" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item2-6')"/>
+                        <input id="item2-6" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item2-7')"/>
+                        <input id="item2-7" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item2-8')"/>
+                        <input id="item2-8" class="crossword-board__item-highlighted" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item3-5')"/>
+                        <span class="crossword-board__item--blank" id="item2-9"></span>
+                        <span class="crossword-board__item--blank" id="item2-10"></span>
+                        <span class="crossword-board__item--blank" id="item2-11"></span>
+                        <span class="crossword-board__item--blank" id="item2-12"></span>
+                        <span class="crossword-board__item--blank" id="item2-13"></span>
+                        <span class="crossword-board__item--blank" id="item2-14"></span>
+                        <span class="crossword-board__item--blank" id="item2-15"></span>
+                
+                        <!-- ROW 2 -->
+                
+                        <!-- ROW 3 -->
+                        <span class="crossword-board__item--blank" id="item3-1"></span>
+                        <span class="crossword-board__item--blank" id="item3-2"></span>
+                        <span class="crossword-board__item--blank" id="item3-3"></span>
+                        <span class="crossword-board__item--blank" id="item3-4"></span>
+                        <input id="item3-5" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item3-6')"/>
+                        <input id="item3-6" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item3-7')"/>
+                        <input id="item3-7" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item3-8')"/>
+                        <input id="item3-8" class="crossword-board__item-highlighted" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item3-9')"/>
+                        <input id="item3-9" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item3-10')"/>
+                        <input id="item3-10" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item4-6')"/>
+                        <span class="crossword-board__item--blank" id="item3-11"></span>
+                        <span class="crossword-board__item--blank" id="item3-12"></span>
+                        <span class="crossword-board__item--blank" id="item3-13"></span>
+                        <span class="crossword-board__item--blank" id="item3-14"></span>
+                        <span class="crossword-board__item--blank" id="item3-15"></span>
+                        <!-- ROW 3 -->
+                
+                        <!-- ROW 4 -->
+                        <span class="crossword-board__item--blank" id="item4-1"></span>
+                        <span class="crossword-board__item--blank" id="item4-2"></span>
+                        <span class="crossword-board__item--blank" id="item4-3"></span>
+                        <span class="crossword-board__item--blank" id="item4-4"></span>
+                        <span class="crossword-board__item--blank" id="item4-5"></span>
+                        <input id="item4-6" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item4-7')"/>
+                        <input id="item4-7" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item4-8')"/>
+                        <input id="item4-8" class="crossword-board__item-highlighted" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item4-9')"/>
+                        <input id="item4-9" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item4-10')" />
+                        <input id="item4-10" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item5-7')"/>
+                        <span class="crossword-board__item--blank" id="item4-11"></span>
+                        <span class="crossword-board__item--blank" id="item4-12"></span>
+                        <span class="crossword-board__item--blank" id="item4-13"></span>
+                        <span class="crossword-board__item--blank" id="item4-14"></span>
+                        <span class="crossword-board__item--blank" id="item4-15"></span>
+                        <!-- ROW 4 -->
+                
+                        <!-- ROW 5 -->
+                        <span class="crossword-board__item--blank" id="item5-1"></span>
+                        <span class="crossword-board__item--blank" id="item5-2"></span>
+                        <span class="crossword-board__item--blank" id="item5-3"></span>
+                        <span class="crossword-board__item--blank" id="item5-4"></span>
+                        <span class="crossword-board__item--blank" id="item5-5"></span>
+                        <span class="crossword-board__item--blank" id="item5-6"></span>
+                        <input id="item5-7" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item5-8')"/>
+                        <input id="item5-8" class="crossword-board__item-highlighted" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item5-9')"/>
+                        <input id="item5-9" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item6-3')"/>
+                        <span class="crossword-board__item--blank" id="item5-10"></span>
+                        <span class="crossword-board__item--blank" id="item5-11"></span>
+                        <span class="crossword-board__item--blank" id="item5-12"></span>
+                        <span class="crossword-board__item--blank" id="item5-13"></span>
+                        <span class="crossword-board__item--blank" id="item5-14"></span>
+                        <span class="crossword-board__item--blank" id="item5-15"></span>
+                        
+                        <!-- ROW 5 -->
+                
+                        <!-- ROW 6 -->
+                        <span class="crossword-board__item--blank" id="item6-1"></span>
+                        <span class="crossword-board__item--blank" id="item6-2"></span>
+                        <input id="item6-3" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item6-4')"/>
+                        <input id="item6-4" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item6-5')"/>
+                        <input id="item6-5" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item6-6')"/>
+                        <input id="item6-6" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item6-7')"/>
+                        <input id="item6-7" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item6-8')"/>
+                        <input id="item6-8" class="crossword-board__item-highlighted" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item6-9')"/>
+                        <input id="item6-9" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item6-10')"/>
+                        <input id="item6-10" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item6-11')"/>
+                        <input id="item6-11" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item8-3')"/>
+                        <span class="crossword-board__item--blank" id="item6-12"></span>
+                        <span class="crossword-board__item--blank" id="item6-13"></span>
+                        <span class="crossword-board__item--blank" id="item6-14"></span>
+                        <span class="crossword-board__item--blank" id="item6-15"></span>
+                        <!-- ROW 6 -->
+                
+                
+                        <!-- ROW 7 -->
+                        <span class="crossword-board__item--blank" id="item8-1"></span>
+                        <span class="crossword-board__item--blank" id="item8-2"></span>
+                        <input id="item8-3" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item8-4')"/>
+                        <input id="item8-4" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item8-5')"/>
+                        <input id="item8-5" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item8-6')"/>
+                        <input id="item8-6" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item8-7')"/>
+                        <input id="item8-7" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item8-8')"/>
+                        <input id="item8-8" class="crossword-board__item-highlighted" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item8-9')"/>
+                        <input id="item8-9" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item8-10')"/>
+                        <input id="item8-10" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item8-11')"/>
+                        <input id="item8-11" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item8-12')"/>
+                        <input id="item8-12" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item9-5')"/>
+                        <span class="crossword-board__item--blank" id="item8-13"></span>
+                        <span class="crossword-board__item--blank" id="item8-14"></span>
+                        <span class="crossword-board__item--blank" id="item8-15"></span>
+                
+                        <!-- ROW 7 -->
+                
+                        <!-- ROW 8 -->
+                        <span class="crossword-board__item--blank" id="item9-1"></span>
+                        <span class="crossword-board__item--blank" id="item9-2"></span>
+                        <span class="crossword-board__item--blank" id="item9-3"></span>
+                        <span class="crossword-board__item--blank" id="item9-4"></span>
+                        <input id="item9-5" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item9-6')"/>
+                        <input id="item9-6" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item9-7')"/>
+                        <input id="item9-7" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item9-8')"/>
+                        <input id="item9-8" class="crossword-board__item-highlighted" type="text" minlength="1" maxlength="1"  required="required" value=""onkeyup="moveOnMax(this,'item9-9')" />
+                        <input id="item9-9" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item9-10')" />
+                        <input id="item9-10" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item9-11')"/>
+                        <input id="item9-11" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item9-12')"/>
+                        <input id="item9-12" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item9-13')"/>
+                        <input id="item9-13" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item9-14')"/>
+                        <input id="item9-14" class="crossword-board__item" type="text" minlength="1" maxlength="1"  required="required" value="" onkeyup="moveOnMax(this,'item9-15')"/>
+                        <span class="crossword-board__item--blank" id="item9-15"></span>
+                
+                        <!-- ROW 8 -->
+                
+                    
+                        
+                
+                        
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 indices-container">
+                <div class="row justify-content-center">
+                    <div class="col-9 col-lg-10">
+                        <h3 class="px-5">Indices:</h3>
+                        <ul class="indices">
+                            <li class="indice">
+                                1- l'évènement phare d'ETIC
+                            </li>
+                            <li class="indice">
+                                2- Entre l'idée et l'entreprise
+                            </li>
+                            <li class="indice">
+                                3- Dernière étape dans le parcours de chaque ETICien
+                            </li>
+                            <li class="indice">
+                                4- QG des ETICiens
+                            </li>
+                            <li class="indice">
+                                5- #MadeInBladi
+                            </li>
+                            <li class="indice">
+                                6- La première fois que vous avez entendu parler de nous
+                            </li>
+                            <li class="indice">
+                                7- 01/01/2021
+                            </li>
+                            <li class="indice">
+                                8- Début de l'histoire de chaque ETICien
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>        
+            </div>
+            <div class="row justify-content-center mt-5 pb-5 validation-container">
+                <div class="col-12 col-md-9 col-lg-4 mx-auto">
+                    <h3>Mot secret</h3>
+                    <form name="form1" class="mt-3" onsubmit="return valider();" method="post">
+                        <input type="text" name="motSecret" placeholder="Mot secret">
+                        <input type="submit" name="Valider" value="Valider" class="mx-3">
+                    </form>
+                </div>
+                <script src="assets/js/valider.js"></script>
+                
+            </div>
+        </div>
+        
+      </div>
+    
+  </section>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+
+</body>
+</html>
