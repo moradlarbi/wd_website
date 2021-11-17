@@ -52,8 +52,8 @@
           </div>
         
         <div class="row justify-content-between mt-5 grille-container">
-            <div class="col-12 col-lg-7"> 
-                <div class="crossword-board-container">
+            <div class="col-12 col-lg-7 position-relative"> 
+                <div class="crossword-board-container justify-content-center">
   
                     <div class="crossword-board">
                         <script>
@@ -62,6 +62,7 @@
                                   document.getElementById(nextFieldID).focus();
                                 }
                               }
+                              
                             </script>
 
                         <!-- ROW 1 -->
@@ -222,7 +223,7 @@
                 
                 </div>
             </div>
-            <div class="col-12 col-lg-5 indices-container">
+            <div class="col-12 col-lg-5 indices-container mt-5">
                 <div class="row justify-content-center">
                     <div class="col-9 col-lg-10">
                         <h3 class="px-5">Indices:</h3>
@@ -257,11 +258,11 @@
                 </div>        
             </div>
             <div class="row justify-content-center mt-5 pb-5 validation-container">
-                <div class="col-12 col-md-9 col-lg-4 mx-auto">
+                <div class="col-12 col-md-9 col-lg-4 mx-auto justify-content-center">
                     <h3>Mot secret</h3>
-                    <form name="form1" class="mt-3" onsubmit="return valider();" method="post">
+                    <form name="form1" class="col-12 mt-3 mx-auto form1" onsubmit="return valider();" method="post">
                         <input type="text" name="motSecret" placeholder="Mot secret">
-                        <input type="submit" name="Valider" value="Valider" class="mx-3">
+                        <input type="submit" name="Valider" value="Valider" class="mx-3 btn">
                     </form>
                 </div>
                 <script src="assets/js/valider.js"></script>
